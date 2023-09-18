@@ -29,6 +29,12 @@ export function List() {
         {pokemons.results.map((pokemon, index) => (
           <li key={index}>
             <span>{pokemon.name}</span>
+            <img
+              alt={pokemon.name}
+              src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${
+                index + 1
+              }.png`}
+            />
           </li>
         ))}
       </ol>
